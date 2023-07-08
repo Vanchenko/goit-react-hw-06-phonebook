@@ -28,7 +28,6 @@ export const ContactForm = () => {
   // Вызывается при отправке формы
   const handleSubmit = evt => {
     evt.preventDefault();
-
     const data = {
       name: name,
       number: number,
@@ -41,6 +40,7 @@ export const ContactForm = () => {
     setName('');
     setNumber('');
   };
+  
   return (
     <form className={css.contactForm} onSubmit={handleSubmit}>
       <label htmlFor={nameInputId} className={css.labelForm}>Name</label>
